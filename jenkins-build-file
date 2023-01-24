@@ -1,0 +1,11 @@
+pipeline{
+   agent any
+    stages{
+        stage('git checkout'){
+            steps{
+                git credentialsId: 'vickyfit2022', url: 'https://github.com/AbdulAhadl/AssignmentProject.git'
+            }
+        }
+    }
+    
+}
