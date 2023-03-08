@@ -2,13 +2,11 @@ pipeline{
     agent any
     environment{
         PATH=opt//etc/opt/apache-maven-3.9.0/bin:$PATH
-    
-    }
-    
+        }
     stages{
           stage('git checkout
                 steps{
-                       git credentialsId: '0c6c5950-1741-445d-a232-f25287bebadd', url: 'https://github.com/AbdulAhadl/AssignmentProject.git'
+                       git credentialsId: 'vickyfit2022', url: 'https://github.com/AbdulAhadl/AssignmentProject.git'
           }
           }
   
