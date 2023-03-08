@@ -4,13 +4,13 @@ pipeline{
         PATH=opt//etc/opt/apache-maven-3.9.0/bin:$PATH
         }
     stages{
-          stage('git checkout
+          stage("git checkout")
                 steps{
                        git credentialsId: 'vickyfit2022', url: 'https://github.com/AbdulAhadl/AssignmentProject.git'
           }
           }
   
-          stage('mvn build'){
+          stage("mvn build"){
                 steps{
                     
                         sh "mvn clean package"
